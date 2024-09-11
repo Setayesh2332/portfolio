@@ -1,0 +1,236 @@
+/* Root Variables */
+:root {
+  --primary-color: #333333; /* Dark Gray for text */
+  --secondary-color: #6b6b6b; /* Medium Gray for secondary text */
+  --accent-color: #8a7b68; /* Soft beige accent */
+  --background-color: #f5f5dc; /* Beige background */
+  --card-background: rgba(255, 255, 255, 0.8); /* Slightly transparent white card background */
+  --header-footer-background: rgba(250, 250, 240, 0.9); /* Semi-transparent off-white */
+  --border-color: rgba(102, 102, 102, 0.2); /* Light gray border for separators */
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  background-size: cover;
+  background-position: center;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  background-color: var(--header-footer-background);
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* Section Styles */
+.section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto 50px auto;
+  padding: 20px;
+  background-color: var(--card-background);
+  border-radius: 8px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.section h1, .section h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.section p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: var(--secondary-color);
+}
+
+/* Skills Section */
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skills li {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: var(--primary-color);
+}
+
+/* Projects Section */
+#projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#projects div {
+  margin-bottom: 20px;
+  width: 200px;
+  padding: 10px;
+  background-color: var(--card-background);
+  border-radius: 8px;
+  text-align: center;
+}
+
+#projects h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+#projects p {
+  font-size: 1em;
+  margin-bottom: 5px;
+  color: var(--secondary-color);
+}
+
+#projects a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+#projects a:hover {
+  color: var(--accent-color);
+}
+
+/* Resume Section */
+#resume {
+  background-color: var(--card-background);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+#resume a {
+  font-size: 1.2em;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+#resume a:hover {
+  color: var(--accent-color);
+}
+
+/* About Me Section */
+#about {
+  background-color: var(--card-background);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+#about p {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: var(--secondary-color);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+form label {
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+}
+
+form input, form textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-background);
+  color: var(--primary-color);
+}
+
+form button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  background-color: var(--header-footer-background);
+  text-align: center;
+  color: var(--primary-color);
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: var(--accent-color);
+}
+
+/* Divider Line */
+.hr-divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 20px 0;
+}
